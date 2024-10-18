@@ -1,6 +1,3 @@
-Here’s a **README** in a clean, copy-paste format. Markdown doesn’t support multiple fonts or complex formatting, but it
-can look good with headers, bold, italics, and code blocks. If you're using platforms like GitHub, this will display
-neatly.
 
 ---
 
