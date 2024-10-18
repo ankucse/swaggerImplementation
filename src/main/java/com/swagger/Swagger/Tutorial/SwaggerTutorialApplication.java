@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SwaggerTutorialApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SwaggerTutorialApplication.class, args); // Starts the Spring Boot application
+        SpringApplication.run(SwaggerTutorialApplication.class, args);
     }
 
 }
