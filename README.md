@@ -1,23 +1,28 @@
-Here’s a **README** in a clean, copy-paste format. Markdown doesn’t support multiple fonts or complex formatting, but it can look good with headers, bold, italics, and code blocks. If you're using platforms like GitHub, this will display neatly.
+Here’s a **README** in a clean, copy-paste format. Markdown doesn’t support multiple fonts or complex formatting, but it
+can look good with headers, bold, italics, and code blocks. If you're using platforms like GitHub, this will display
+neatly.
 
 ---
 
 # **Swagger Tutorial API Documentation**
 
-This project is a **Spring Boot** application integrated with **Swagger** for API documentation. The project demonstrates how to create REST APIs for users, products, and orders, and how to visualize and test them using Swagger UI.
+This project is a **Spring Boot** application integrated with **Swagger** for API documentation. The project
+demonstrates how to create REST APIs for users, products, and orders, and how to visualize and test them using Swagger
+UI.
 
 ---
 
 ## **Table of Contents**
+
 - **[Getting Started](#getting-started)**
 - **[Prerequisites](#prerequisites)**
 - **[Project Structure](#project-structure)**
 - **[Dependencies](#dependencies)**
 - **[Swagger UI](#swagger-ui)**
 - **[Available APIs](#available-apis)**
-  - [User APIs](#user-apis)
-  - [Product APIs](#product-apis)
-  - [Order APIs](#order-apis)
+    - [User APIs](#user-apis)
+    - [Product APIs](#product-apis)
+    - [Order APIs](#order-apis)
 - **[Testing the APIs](#testing-the-apis)**
 - **[Troubleshooting](#troubleshooting)**
 
@@ -30,6 +35,7 @@ To get a local copy of this project up and running, follow the steps below.
 ---
 
 ## **Prerequisites**
+
 - **Java 15** installed
 - **Maven** installed
 - **IDE** (e.g., IntelliJ or Eclipse) to run the project
@@ -68,6 +74,7 @@ swagger-tutorial/
 Make sure the following dependencies are added to your `pom.xml` to enable Swagger:
 
 ```xml
+
 <dependencies>
     <!-- Spring Boot dependencies -->
     <dependency>
@@ -98,26 +105,29 @@ Once the application is up and running, access **Swagger UI** to visualize and i
 ## **Available APIs**
 
 ### **User APIs**
-| **Method** | **Endpoint**                  | **Description**               | **Parameters**                |
-|------------|-------------------------------|-------------------------------|-------------------------------|
-| `POST`     | `/api/users/{userId}`          | Create a new user              | `userId`, `name` (Query)       |
-| `GET`      | `/api/users/{userId}`          | Get user details by ID         | `userId` (Path)                |
+
+| **Method** | **Endpoint**          | **Description**        | **Parameters**           |
+|------------|-----------------------|------------------------|--------------------------|
+| `POST`     | `/api/users/{userId}` | Create a new user      | `userId`, `name` (Query) |
+| `GET`      | `/api/users/{userId}` | Get user details by ID | `userId` (Path)          |
 
 ---
 
 ### **Product APIs**
-| **Method** | **Endpoint**                  | **Description**               | **Parameters**                |
-|------------|-------------------------------|-------------------------------|-------------------------------|
-| `POST`     | `/api/products/{productId}`    | Add a new product              | `productId`, `name` (Query)    |
-| `GET`      | `/api/products/{productId}`    | Get product details by ID      | `productId` (Path)             |
+
+| **Method** | **Endpoint**                | **Description**           | **Parameters**              |
+|------------|-----------------------------|---------------------------|-----------------------------|
+| `POST`     | `/api/products/{productId}` | Add a new product         | `productId`, `name` (Query) |
+| `GET`      | `/api/products/{productId}` | Get product details by ID | `productId` (Path)          |
 
 ---
 
 ### **Order APIs**
-| **Method** | **Endpoint**                  | **Description**               | **Parameters**                |
-|------------|-------------------------------|-------------------------------|-------------------------------|
-| `POST`     | `/api/orders/{orderId}`        | Place a new order              | `orderId`, `product` (Query)   |
-| `GET`      | `/api/orders/{orderId}`        | Get order details by ID        | `orderId` (Path)               |
+
+| **Method** | **Endpoint**            | **Description**         | **Parameters**               |
+|------------|-------------------------|-------------------------|------------------------------|
+| `POST`     | `/api/orders/{orderId}` | Place a new order       | `orderId`, `product` (Query) |
+| `GET`      | `/api/orders/{orderId}` | Get order details by ID | `orderId` (Path)             |
 
 ---
 
@@ -135,31 +145,37 @@ You can test all the APIs directly using **Swagger UI** by following these steps
 ### **Sample API Requests**
 
 #### **Create a User**
+
 - Method: `POST`
 - URL: `/api/users/{userId}`
 - Example: `/api/users/1?name=John`
 
 #### **Get a User**
+
 - Method: `GET`
 - URL: `/api/users/{userId}`
 - Example: `/api/users/1`
 
 #### **Add a Product**
+
 - Method: `POST`
 - URL: `/api/products/{productId}`
 - Example: `/api/products/101?name=Laptop`
 
 #### **Get a Product**
+
 - Method: `GET`
 - URL: `/api/products/{productId}`
 - Example: `/api/products/101`
 
 #### **Place an Order**
+
 - Method: `POST`
 - URL: `/api/orders/{orderId}`
 - Example: `/api/orders/201?product=Laptop`
 
 #### **Get an Order**
+
 - Method: `GET`
 - URL: `/api/orders/{orderId}`
 - Example: `/api/orders/201`
@@ -170,7 +186,8 @@ You can test all the APIs directly using **Swagger UI** by following these steps
 
 If you don’t see your APIs in the Swagger UI, check the following:
 
-1. **Check Package Scanning**: Ensure that your `SwaggerConfig.java` is configured to scan the correct package: This must be your local package with what name you have created . 
+1. **Check Package Scanning**: Ensure that your `SwaggerConfig.java` is configured to scan the correct package: This
+   must be your local package with what name you have created .
    ```java
    .apis(RequestHandlerSelectors.basePackage("com.example.swaggertutorial.controller"))
    ```
@@ -195,6 +212,7 @@ This project is licensed for educational purposes.
 
 ---
 
-This **README** provides all the necessary steps to set up and run the Swagger-enabled Spring Boot project. You can now use Swagger to visualize and test your API endpoints.
+This **README** provides all the necessary steps to set up and run the Swagger-enabled Spring Boot project. You can now
+use Swagger to visualize and test your API endpoints.
 
 ---
