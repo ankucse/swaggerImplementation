@@ -44,7 +44,7 @@ public class SwaggerConfig {
                 .title("Swagger Tutorial API")  // Title of the API
                 .description("This is a demo API for learning how to integrate Swagger with Spring Boot.")  // API description
                 .version("1.0")  // Version of the API
-                .contact(new Contact("Shreya", "www.shreya.com", "shreya@example.com"))  // Contact information
+                .contact(new Contact("Shreya", "www.dummyEmail.com", "shreya@example.com"))  // Contact information
                 .build();
     }
 }
